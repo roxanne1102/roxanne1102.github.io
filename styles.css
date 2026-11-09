@@ -317,7 +317,7 @@ body{background:var(--paper);color:#171717}
 .timeline-step--internship.is-active::before,.timeline-step--internship:hover::before,.timeline-step--internship:focus-visible::before{background:var(--timeline-gold)}
 .timeline-list{min-height:225px}
 .timeline-list:has(.timeline-preview:not([hidden])){min-height:357px;padding-top:132px}
-.timeline-preview{position:absolute;top:0;z-index:5;width:min(340px,calc(100% - 24px));margin:0;box-sizing:border-box;background:#fffdf8;border-color:#d8c8a1;box-shadow:0 16px 38px rgba(93,68,30,.14)}
+.timeline-preview{position:absolute;top:0;z-index:5;width:min(560px,calc(100% - 24px));margin:0;box-sizing:border-box;background:#fffdf8;border-color:#d8c8a1;box-shadow:0 16px 38px rgba(93,68,30,.14)}
 .timeline-preview.is-experience{grid-template-columns:1fr}.timeline-preview.is-experience .preview-media{display:none}
 .media-slot.media-gallery{display:block;padding:0;overflow-y:auto;overscroll-behavior:contain;scroll-snap-type:y mandatory;scrollbar-width:thin;scrollbar-color:#a8a8a4 transparent}
 .media-slot.media-gallery::before,.media-slot.media-gallery::after{content:none}
