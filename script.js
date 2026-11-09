@@ -74,6 +74,7 @@ const previewTitle = document.querySelector('#preview-title');
 const previewDescription = document.querySelector('#preview-description');
 const previewLink = document.querySelector('#preview-link');
 const previewLabel = document.querySelector('.preview-label');
+const previewImage = document.querySelector('#preview-image');
 const previewClose = document.querySelector('.preview-close');
 const timelineList = document.querySelector('.timeline-list');
 let openedStep = null;
@@ -87,6 +88,14 @@ const projectPreviews = {
   'ancient-rag': { title: '古建智寻 · AI 文旅 RAG 导览问答平台', description: 'AI 文旅 RAG 导览问答平台；详细项目职责与成果待补充。' },
   experience: { title: '珠海衫木少儿成长中心', description: '2026 年暑期担任助教，参与维护 5 个家长社群，整理需求反馈与课程内容，编辑机构朋友圈文案，并提供线上个人报告等虚拟产品服务。' },
   livis: { title: 'Livis 理想眼镜', description: '独立完成面向美国市场的中英双语产品说明书、图表配置与资料核对。' },
+};
+const projectPreviewImages = {
+  ancient: 'gujian-home.png',
+  'ancient-rag': 'gujian-star-cloud.png',
+  lion: 'lion-cover.png',
+  jike: 'jike-attractions.png',
+  yingge: 'yingge-home.png',
+  livis: 'livis-cover.png',
 };
 
 function markTimelineStep(id) {
@@ -112,6 +121,10 @@ for (const step of timelineSteps) {
     if (!project || !timelinePreview) return;
     previewTitle.textContent = project.title;
     previewDescription.textContent = project.description;
+    if (previewImage && projectPreviewImages[id]) {
+      previewImage.src = `assets/${projectPreviewImages[id]}`;
+      previewImage.alt = `${project.title}项目预览图`;
+    }
     const isExperience = id === 'experience';
     const isEnrollment = id === 'enrollment';
     const isRag = id === 'ancient-rag';
