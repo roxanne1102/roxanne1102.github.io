@@ -86,7 +86,7 @@ const projectPreviews = {
   jike: { title: '迹客行', description: '负责文旅商业计划书中的市场、产品、运营与财务内容编写。' },
   yingge: { title: '英歌文化', description: '负责英歌文化网站的栏目结构、内容路径与互动入口构思，并参与英歌舞 IP 相关的营销宣传。' },
   'ancient-rag': { title: '古建智寻 · AI 文旅 RAG 导览问答平台', description: 'AI 文旅 RAG 导览问答平台；详细项目职责与成果待补充。' },
-  experience: { title: '珠海衫木少儿成长中心', description: '2026 年暑期担任助教，参与小红书账号内容推广与朋友圈营销，维护 5 个家长社群，整理课程内容和家长需求反馈。' },
+  experience: { title: '珠海衫木少儿成长中心', description: '2026 年暑期担任助教，参与小红书内容推广与朋友圈营销，维护 5 个家长社群，并在外教授课环境中用英语与外教、同事及学生协作。' },
   livis: { title: 'Livis 理想眼镜', description: '独立完成面向美国市场的中英双语产品说明书、图表配置与资料核对。' },
 };
 const projectPreviewImages = {
